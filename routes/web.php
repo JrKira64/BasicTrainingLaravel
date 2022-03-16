@@ -2,4 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/table','App\Http\Controllers\table@tab');
+Route::get('/', 'App\Http\Controllers\traitement@index');
+Route::get('/pop', 'App\Http\Controllers\traitement@pop');
+Route::get('/contact', 'App\Http\Controllers\traitement@contact');
+
